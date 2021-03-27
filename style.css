@@ -1,0 +1,1057 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body, html { overflow-x:hidden; }
+
+.nav{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 6.5rem;
+    background-color: #222;
+    z-index: 1;
+
+}
+
+.nav h2{
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+#item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#item li{
+    list-style: none;
+    padding-right: 50px;
+}
+
+#item li a{
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+#item li a:hover, #item .icon i:hover{
+    color: #ff5733;
+    cursor: pointer;
+}
+
+
+#item .icon i{
+    color: white;
+    padding-right: 30px;
+    font-weight: 300;
+}
+
+#bar{
+    color:#f13a11;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+
+}
+
+.back{
+    background-image: url(/img/pexels-mike-120049.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    z-index: -1;
+}
+
+.back .overlay{
+    background: #171819;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.mid{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.mid p{
+    color: #7f8c8d;
+    font-size: 1.3rem;
+    margin-bottom: 1.4rem;
+}
+
+.mid h2{
+    color: #fff;
+    font-size: 3rem;
+}
+
+.mid .btn{
+ margin-top: 2rem;
+}
+
+.mid .btn a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.mid .btn a.simple{
+
+    color: #fff;
+    font-weight: 500;
+    padding: 0.9rem
+
+}
+
+.mid .btn a.simple:hover{
+    color: #fff
+}
+
+.mid .btn a.border{
+
+    color: #ff5733;
+    border: 1px solid #ff5733;
+    font-weight: 500;
+    padding: 0.9rem;
+    border-radius: 3px;
+
+}
+
+.mid .btn a.border:hover{
+    background: #fff;
+    border: 1px solid #fff;
+} 
+
+.details{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 15rem;
+    background: #171819;
+
+}
+
+.details h3,h6,h5{
+    color: #fff;
+
+}
+
+.details .one{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+ 
+.details .one a:hover{
+    background-color: #fff;
+    color:#f13a11;
+
+
+}
+
+.details .one h3{
+    font-size: 2.5rem;
+    padding-bottom: 1.1rem;
+}
+
+
+
+.details .one h6{
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-bottom: 3rem;
+}
+
+.details .one p{
+    color: #666262;
+    font-size: 1.2rem;
+    padding-bottom: 7ren;
+}
+
+.details .one a{
+    color: white;
+    background: #f13a11;
+    padding: 1rem 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.details .two{
+    width: 45%;
+    border-left: 1px solid #666262;
+    padding-left: 4rem;
+}
+
+.details .two h3{
+    font-size: 2.5rem;
+    padding-bottom: 1.1rem;
+    
+}
+
+
+.details .two h5{
+    font-size: 1.2rem;
+    
+}
+
+.details .two p{
+    font-size: 1.2rem;
+    color: #666262;
+    margin-bottom: o.8rem;
+}
+
+
+.trainer{
+    background-color: #f9f9f9;
+    padding: 8rem; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trainer .about{
+    width: 39%;
+
+}
+
+.trainer .about h2{
+    color: #212529;
+    font-size: 2.1rem;
+    padding-bottom: 1.8rem;
+}
+
+.trainer .people{
+
+ width: 50%;
+}
+
+.trainer .about p{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+ }
+
+ .trainer .people .team1{
+     width: 39%;
+     height: auto;
+     box-sizing: border-box;
+     background: #fff;
+
+ }
+
+ .trainer .people .team1 .img img{
+width: 100%;
+object-fit: cover;
+
+ }
+
+
+ .trainer .people .team1 .name, .trainer .people .team1 .pro{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+
+ }
+
+ .trainer .people .team1 .teamDetails{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     
+ }
+
+ .trainer .people .team1 .name{
+     padding: 5px 20px 0 20px;
+ }
+
+
+
+
+
+ .trainer .people .team1 .name h4{
+     color: #212529;
+     font-size: 1.5rem;
+
+ }
+
+ .trainer .people .team1 .name i,  .trainer .people .team1 .pro i{
+     font-size: 1.3rem;
+     font-weight: bolder;
+     cursor: pointer;
+     color: #212529;
+
+ }
+
+ .trainer .people .team1 .pro{
+     padding: 0 20px 5px 20px;
+ }
+ 
+ .trainer .people .team1 .pro p{
+    color: #212529;
+    font-size: 1.1rem;
+
+}
+
+.people{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.class{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 7rem 8rem;
+
+}
+
+.class .paragraph{
+    font-size: 1.3rem;
+    color: #95a5a6;
+    padding-bottom: 6px;
+    text-align: center;
+}
+
+
+.class .h2{
+    font-size: 2.2rem;
+    color: #222;
+    font-weight: 700;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.class .classMenu  .team1{
+    width: 32%;
+    height: auto;
+    box-sizing: border-box;
+    background: #fff;
+
+}
+
+.class .classMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.class .classMenu .team1 .img img{
+width: 100%;
+object-fit: cover;
+
+}
+
+
+.class .classMenu .team1 .teamDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+}
+
+.class .classMenu .team1 .teamDetails .name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px 0px 30px;
+}
+
+.class .classMenu .team1 .teamDetails .name .nameDetails h4{
+    color: #212529;
+    font-size: 1.7rem;
+
+}
+
+.class .classMenu .team1 .teamDetails .name .nameDetails p{
+    color: #212529;
+    font-size: 1.7rem;
+}
+
+.class .classMenu .team1 .teamDetails .name .nameDetails p span{
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.class .classMenu .team1 .teamDetails .name .num h5{
+    font-size: 1rem;
+    background: #f13a11;
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.class .classMenu .team1 .name, .class .classMenu .team1 .pro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.class .classMenu .team1 .teamDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+}
+
+.class .classMenu .team1 .name{
+    padding: 5px 20px 0 20px;
+}
+
+
+
+
+
+.class .classMenu .team1 .name h4{
+    color: #212529;
+    font-size: 1.5rem;
+
+}
+
+.class .classMenu .team1 .name i, .class .classMenu .team1 .pro i{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #212529;
+
+}
+
+.class .classMenu .team1 .pro{
+    padding: 0 20px 5px 20px;
+}
+
+.class .classMenu .team1 .pro p{
+   color: #212529;
+   font-size: 1.1rem;
+
+}
+
+.class .classMenu .team1 .pro{
+    padding: 15px 30px 30px 30px;
+}
+
+.class .classMenu .team1 .pro p{
+    font-size: 1.1rem;
+    color: #666262;
+
+}
+
+
+/* CONTACT */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUEIRIES */
+
+@media screen and (max-width: 1042px){
+    .nav{
+       
+        padding: 1rem 4.5rem;
+       
+    
+    }
+    
+    .nav h2{
+       
+        font-size: 1.4rem;
+    }
+    
+    
+    
+    #item li{
+        padding-right: 30px;
+    }
+    
+    #item li a{
+        
+        font-size: 0.9rem;
+        color: white;
+    
+    }
+    
+   
+    
+    
+    #item .icon i{
+        
+        padding-right: 20px;
+        
+    }
+
+
+}
+
+@media screen and (max-width: 991px){
+    .nav{
+       
+        padding: 1rem 3rem;
+        
+    
+    }
+    
+    .nav h2{
+        color: #fff;
+        font-size: 1.6rem;
+    }
+    
+    #item{
+        
+        flex-direction: column;
+        text-align: center;
+        width: 300px;
+        height: 80vh;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        background: rgba(0,0,0,0.8);
+        z-index: 100000;
+        margin-top: 4.2rem;
+        transition: 0.5s;        
+    }
+    
+    #item li{
+
+        padding-right: 0px;
+        padding: 4px 0;
+    }
+    
+    #item li a{
+        font-size: 1.2rem;
+    
+    }
+    
+    #item .icon{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    #item .icon i{
+        padding: 0 15px 0 15px;
+        
+    }
+    
+    #bar{
+       
+        display: initial;
+        cursor: pointer;
+    
+    }
+
+    .mid{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .mid p{
+        
+        font-size: 1.1rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .mid h2{
+        color: #fff;
+        font-size: 2.5rem;
+    }
+    
+    .mid .btn{
+     margin-top: 1.5rem;
+    }
+    
+    .mid .btn a{
+     font-size: 0.9rem;
+    }
+    
+    .mid .btn a.simple{
+    
+        
+        padding: 0.7rem 1.4rem;
+    
+    }
+    
+    
+    
+    .mid .btn a.border{
+    
+        
+        padding: 0.7rem 1.4rem;
+    
+    }
+    .details{
+        
+        padding: 6rem 7rem;
+    
+    }
+    
+   
+    
+    .details .one{
+        width: 50%;
+       
+    }
+     
+    
+    
+    .details .one h3{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    
+    
+    
+    
+    .details .one p{
+        font-size: 1.1rem;
+        margin-bottom: 2.2ren;
+    }
+    
+    .details .one a{
+     font-size: 0.9rem;
+    
+    }
+    
+    .details .two{
+        
+        padding-left: 3.5rem;
+    }
+    
+    .details .two h3{
+        font-size: 2rem;
+        padding-bottom: 1.1rem;
+        
+    }
+    
+    
+    .details .two h5{
+        font-size: 1rem;
+        
+    }
+    
+    .details .two p{
+        font-size: 1rem;
+        margin-bottom: o.6rem;
+    }
+    
+    .trainer{
+        padding: 6rem 7rem;
+        
+    }
+    
+    
+    
+    .trainer .about h2{
+        font-size: 2rem;
+        padding-bottom: 1.4rem;
+    }
+    
+    
+    
+    .trainer .about p{
+        font-size: 1rem;
+     }
+    
+     .trainer .people .team1{
+         width: 48%;
+   
+    
+     }
+    
+    
+    
+    
+    
+    
+     
+    
+     .trainer .people .team1 .name{
+         padding: 5px 15px 0 15px;
+     }
+    
+    
+    
+    
+    
+     .trainer .people .team1 .name h4{
+         color: #212529;
+         font-size: 1.5rem;
+    
+     }
+    
+     .trainer .people .team1 .name i,  .trainer .people .team1 .pro i{
+         font-size: 1.3rem;
+         font-weight: bolder;
+         cursor: pointer;
+         color: #212529;
+    
+     }
+    
+     .trainer .people .team1 .pro{
+         padding: 0 15px 5px 15;
+     }
+     
+     .trainer .people .team1 .pro p{
+        color: #212529;
+        font-size: 1.1rem;
+    
+    }
+
+    .class{
+        
+        padding: 6rem;
+    
+    }
+    
+    .class .paragraph{
+        font-size: 1.1rem;
+        padding-bottom: 4px;
+        
+    }
+    
+    
+    .class .h2{
+        font-size: 2rem;
+        padding-bottom: 30px;
+    }
+    
+   
+    
+   
+   
+    
+    
+    .class .classMenu .team1 .teamDetails{
+        padding-bottom: 7px;
+    
+        
+    }
+    
+    .class .classMenu .team1 .teamDetails .name{
+        
+        padding: 5px 15px 0px 15px;
+    }
+    
+    .class .classMenu .team1 .teamDetails .name .nameDetails h4{
+        color: #212529;
+        font-size: 1.7rem;
+    
+    }
+    
+    .class .classMenu .team1 .teamDetails .name .nameDetails p{
+        font-size: 1.2rem;
+    }
+    
+    .class .classMenu .team1 .teamDetails .name .nameDetails p span{
+        font-size: 1rem;
+    }
+    
+    .class .classMenu .team1 .teamDetails .name .num h5{
+        font-size: 0.9rem;
+        width: 3.2rem;
+        height: 3.2rem;
+        line-height: 3.5rem;
+    }
+    
+    .class .classMenu .team1 .name, .class .classMenu .team1 .pro{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    
+    .class .classMenu .team1 .teamDetails{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        
+    }
+    
+    .class .classMenu .team1 .name{
+        padding: 5px 20px 0 20px;
+    }
+    
+    
+    
+    
+    
+    .class .classMenu .team1 .name h4{
+        color: #212529;
+        font-size: 1.5rem;
+    
+    }
+    
+    .class .classMenu .team1 .name i, .class .classMenu .team1 .pro i{
+        font-size: 1.3rem;
+        font-weight: bolder;
+        cursor: pointer;
+        color: #212529;
+    
+    }
+    
+    .class .classMenu .team1 .pro{
+        padding: 15px 15px 30px 15px;
+    }
+    
+    .class .classMenu .team1 .pro p{
+       color: #212529;
+       font-size: 1.1rem;
+    
+    }
+    
+    .class .classMenu .team1 .pro{
+        padding: 15px 30px 30px 30px;
+    }
+    
+    .class .classMenu .team1 .pro p{
+        font-size: 1rem;
+    
+    }
+
+   
+
+
+}
+
+@media screen and (max-width: 768px){
+    
+    
+    .nav h2{
+        color: #fff;
+        font-size: 1.5rem;
+    }
+
+    .back{
+        background-position: center;
+    }
+    
+    
+
+    .mid{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .mid p{
+        
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .mid h2{
+        color: #fff;
+        font-size: 2.5rem;
+    }
+    
+    .mid .btn{
+     margin-top: 1rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    }
+    
+    
+    
+    .mid .btn a.simple{
+    
+        
+        padding: 0.7rem 1.4rem;
+        margin-bottom: 7px;
+    
+    }
+    
+    
+    
+    .mid .btn a.border{
+    
+        
+        padding: 0.7rem 1.4rem;
+    
+    }
+    .details{
+        
+        padding: 5rem 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+   
+    
+    .details .one{
+        width: 70%;
+       
+    }
+     
+    
+    
+  
+    
+    .details .one a{
+     font-size: 1rem;
+    
+    }
+    
+    .details .two{
+        
+        padding-left: 0rem;
+        border-left: 0;
+        border-top: 1px solid #666262;
+        width: 70%;
+        margin-top: 1.7rem;
+        padding-top: 1.7rem;
+    }
+    
+    
+    
+    .trainer{
+        padding: 5rem 2rem;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    .trainer .about{
+        width: 70%;
+        margin-bottom: 1.7rem;
+    }
+    
+    
+    
+    .trainer .people{
+        width: 70%;
+    }
+    
+     .trainer .people .team1{
+         width: 48%;
+   
+    
+     }
+    
+    
+    
+    
+    
+    
+     
+    
+
+
+    .class{
+        
+        padding: 6rem;
+    
+    }
+    
+   
+    
+    .class .classMenu{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    
+    .class .classMenu .team1{
+        width: 65%;
+        margin-bottom: 20px;
+    }
+   
+    
+    
+    
+    
+    .class .classMenu .team1 .teamDetails .name .nameDetails p span{
+        font-size: 1rem;
+    }
+    
+    .class .classMenu .team1 .teamDetails .name .num h5{
+        font-size: 0.9rem;
+        width: 3.2rem;
+        height: 3.2rem;
+        line-height: 3.5rem;
+    }
+    
+    .class .classMenu .team1 .name, .class .classMenu .team1 .pro{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    
+    .class .classMenu .team1 .teamDetails{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        
+    }
+    
+    .class .classMenu .team1 .name{
+        padding: 5px 20px 0 20px;
+    }
+    
+    
+    
+    
+  
+
+}
+
+@media screen and (max-width: 496px){
+
+}
+
