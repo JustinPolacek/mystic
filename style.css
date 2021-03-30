@@ -17,7 +17,8 @@ body, html { overflow-x:hidden; }
     width: 100%;
     padding: 1rem 6.5rem;
     background-color: #222;
-    z-index: 1;
+    z-index: 100;
+
 
 }
 
@@ -465,12 +466,80 @@ object-fit: cover;
 
 }
 
+/* VIDEO SECTION */
+
+.showcase {
+	height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	padding: 0 20px;
+}
+
+
+.video-container {
+	position: absolute;
+	width: 100%;
+	height: 40%;
+	overflow: hidden;
+	background: var(--primary-color) url('./https://traversymedia.com/downloads/cover.jpg') no-repeat center
+		center/cover;
+}
+
+.video-container video {
+	min-width: 100%;
+	min-height: 100%;
+    position: absolute;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+    margin-bottom: 100px;
+}
+
+.video-container:after {
+	content: '';
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.6);
+	position: absolute;
+}
+
+
+.content {
+	z-index: 2;
+    font-size: 2rem;
+}
+
+.btn-2 {
+	display: inline-block;
+	padding: 10px 30px;
+	color: #fff;
+	border-radius: 5px;
+	border: solid #ff5733;
+	margin-top: 25px;
+	opacity: 0.9;
+}
+
+.btn:hover {
+	transform: scale(0.98);
+}
 
 /* CONTACT */
 
 
 
+.our-work{
+    min-height: 100vh;
+}
 
+.our-para{
+    display: flex;
+    justify-content: center;
+}
 
 
 
@@ -1052,6 +1121,11 @@ object-fit: cover;
 }
 
 @media screen and (max-width: 496px){
+
+    
+    .nav h2{
+        font-size: 1.1rem;
+    }
 
 }
 
