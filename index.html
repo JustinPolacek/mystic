@@ -11,21 +11,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
      crossorigin="anonymous" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 <body>
+
+
+
+
+
+
+
+
+
+
+
     <div class="nav">
         <h2>Mystic Auto body</h2>
         <ul id="item">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#services">Services</li>
             <li><a href="#">Contact</a></li>
             <div class="icon">
                 <i class="fab fa-facebook-f"></i>
                 <i class="fab fa-instagram"></i>
-                <i class="fab fa-youtube"></i>
             </div>
         </ul>
         <i  id="bar"class="fas fa-bars"></i>
@@ -37,16 +48,16 @@
         </div>
     </div>
 
-    <div class="mid">
-        <p></p>
+    <div class="mid" id="home">
         <h2>Mystic Auto Body</h2>
+        <p> Premiere Auto Body Service</p>
 \
         <p></p>
         <div class="btn">
             <a class="border" href="#">Contact us</a>
         </div>
     </div>
-     <div class="details">
+     <div class="details" id="about">
          <div class="one"     data-aos="fade-up"
          >
              <h3>Mystic Auto Body</h3>
@@ -71,7 +82,33 @@
          </div>
      </div>
 
-     <div class="trainer">
+
+
+
+  <!------INTRO------->
+
+  
+  <div class="intro">
+    <h1 class="logo-header">
+        <span class="logo">Mystic </span><span class="logo"> Auto Body</span>
+    </h1>
+</div>
+
+
+
+
+
+  <!------END OF INTRO -->
+
+
+
+
+
+
+
+
+
+     <div class="trainer" >
          <div class="about">
              <h2 data-aos="fade-left">Generational Knowledge</h2>
              <p data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, eum!
@@ -138,7 +175,7 @@
     <!-------END OF VIDEO SECTION------->
 
     <!--------OUR WORK------->
-     <section class="our-work">
+     <section class="our-work" id="services">
          <div class="our-heading">
          <h2>Services</h2>
          </div>
@@ -179,10 +216,81 @@
 
 
  <!----CONTACT SECTION------------>
+ 
+ <section class="contact-section">
+
+ <div class="container" data-aos="fade-right">  
+    <form id="contact" action="" method="post">
+      <h3>Contact Form</h3>
+      <h4>Contact us today, and get reply with in 24 hours!</h4>
+      <fieldset>
+        <input placeholder="Full Name" type="text" tabindex="1">
+      </fieldset>
+      <fieldset>
+        <input placeholder="Email Address" type="email" tabindex="2" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Phone Number" type="tel" tabindex="3" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Web Site (starting with http://)" id="website" type="url" tabindex="4" required>
+      </fieldset>
+      <fieldset>
+        <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send now</button>
+      </fieldset>
+    </form>
+   
+    
+  </div>
+ 
+
+  </section>
 
 
- 
- 
+  <!-------FOOTER-------->
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                <!--GOOGLE FONTS-->
+                <link rel="preconnect" href="https://fonts.gstatic.com">
+                <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+                </head>
+                <body>
+                <footer>
+                <div class="footer">
+                <div class="row">
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+                
+                <div class="row"  >
+                <ul>
+                <li><a href="#mid">Home</a ></li >
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                </ul>
+                </div>
+                
+                <div class="row">
+                Website Designed By: Justin Polacek 
+                </div>
+                </div>
+                </footer>
+
+
+
+
+
+
+
+
+
+  <!------FOOOTER------->
    
         
         
