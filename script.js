@@ -1,4 +1,4 @@
-var menu = document.getElementById("bar");
+ menu = document.getElementById("bar");
  var  item = document.getElementById("item");
 
  item.style.right = '-300px';
@@ -47,4 +47,22 @@ window.addEventListener('DOMContentLoaded', () =>{
     })
 
 })
+
+
+
+const nav = document.querySelector(".nav-list");
+const burger = document.querySelector(".burger");
+const links = nav.querySelectorAll("a");
+
+burger.addEventListener("click", () => {
+nav.classList.toggle("nav-open");
+burger.classList.toggle("toggle");
+                                   });
+
+ links.forEach(link => {
+ link.addEventListener("click", () => {
+ nav.classList.toggle("nav-open");
+ burger.classList.toggle("toggle");
+                                     });
+                                       });
 
